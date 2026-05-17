@@ -50,7 +50,8 @@ High_OBP_Players = df[
     ascending=False
 ).head(5)
 
-# 결과 출력print(High_OBP_Players[["이름", "팀", "BB", "PA", "OBP"]])
+# 결과 출력
+print(High_OBP_Players[["이름", "팀", "BB", "PA", "OBP"]])
 
 # 기본값 "보통"
 df["OPS등급"] = "보통"
@@ -58,7 +59,8 @@ df["OPS등급"] = "보통"
 # OPS 0.9 이상은 "최상"
 df.loc[df["OPS"] >= 0.9, "OPS등급"] = "최상"
 
-# 결과 출력print(df[["이름", "OPS", "OPS등급"]].head(100))
+# 결과 출력
+print(df[["이름", "OPS", "OPS등급"]].head(100))
 
 # war 상위 100명의 팀별 평균 HR 계산
 team_hr = df.groupby("팀")["HR"].mean()
