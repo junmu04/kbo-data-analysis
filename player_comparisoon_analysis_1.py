@@ -26,7 +26,7 @@ defensive_players = df.sort_values(by=["dWAR","oWAR"], ascending=[False,True]).h
 
 print(defensive_players[["이름", "팀", "oWAR", "dWAR"]])
 
-#ops가 0.8 이상이면서 홈런이 3개 이하인 선수 찾기 (단, 30경기 이상 출전한 선수로 제한)
+#ops가 0.8 이상이면서 홈런이 3개 이하인 선수 찾기 (단, 30경기 이상 출전한 선수로 제한함)
 special_players = df[(df["OPS"] >= 0.8) & (df["HR"] <= 3)&(df["G"]>=30)]
     
 special_players_sorted = special_players.sort_values(by="OPS", ascending=False)
