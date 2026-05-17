@@ -22,7 +22,7 @@ plt.scatter(df["HR"], df["OPS"])
 # 각 선수 이름 표시
 for i in range(len(df)):
     
-    if df["OPS"][i] >0.7:  # OPS가 0.7 이상인 선수만 이름 표시
+    if df["OPS"][i] >0.7:  # OPS가 0.7 이상인 선수만 이름표시
 
         # x축 값 (홈런)
         x = df["HR"][i]
