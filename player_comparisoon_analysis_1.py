@@ -53,7 +53,7 @@ High_OBP_Players = df[
 # 결과 출력
 print(High_OBP_Players[["이름", "팀", "BB", "PA", "OBP"]])
 
-# 기본값 "보통"
+# 기본값 "보통"이라는 새로운 칼럼 생성
 df["OPS등급"] = "보통"
 
 # OPS 0.9 이상은 "최상"
