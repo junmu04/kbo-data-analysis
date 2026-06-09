@@ -12,3 +12,4 @@ print(
 print(
     df.corr(numeric_only=True)["WAR"].sort_values(ascending=False)
 )
+
